@@ -1,0 +1,23 @@
+.Right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    
+   
+
+    img{
+        
+        width: 400px;
+        height: 500px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    }
+
+    @media screen and (max-width: 1300px){
+    
+        width: 100%;
+       justify-content: center;
+
+    }
+}

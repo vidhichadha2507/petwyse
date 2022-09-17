@@ -1,0 +1,32 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1D6E65;
+    padding: 50px 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+
+
+    .forms{
+        
+       input{
+       border: none;
+    
+       }
+
+       button{
+       
+        background-color: #CFA285;
+      color: white;
+        padding: 0 20px;
+        border: none;
+        margin-left: 5px;
+        
+        
+       }
+    }
+
+}

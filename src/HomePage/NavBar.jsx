@@ -10,7 +10,7 @@ const NavBar = () => {
       >
         <div className="container-fluid">
           <a className="navbar-brand logo-text fw-bold" href="#">
-            Coding Yaar
+            Petwyse
           </a>
           <button
             className="navbar-toggler"

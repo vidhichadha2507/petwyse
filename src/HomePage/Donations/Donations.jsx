@@ -9,15 +9,15 @@ const Donations = () => {
         <div className="cards">
 
         <div className="donor">
-            <h3 className='card-heading'>Contribute as Donor</h3>
-            <p>Lorem ipsum dolor Suscipit asperiores magnam officiis tempore hic error! Hic voluptatibus dolores repellendus quibusdam quo neque delectus voluptas autem laboriosam!</p>
-            <button className='Donors-Button'>Donate</button>
+            <h3 className='card-heading'>Users</h3>
+            <p>Willing users can click here to assign themselves the left over food from the restaurants closest to their locality.</p>
+            <button className='Donors-Button'>Dashboard</button>
         </div>
 
         <div className="volunteer">
-            <h3 className='card-heading'>Contribute as Donor</h3>
-            <p>Lorem ipsum dolor Suscipit asperiores magnam officiis tempore hic error! Hic voluptatibus dolores repellendus quibusdam quo neque delectus voluptas autem laboriosam!</p>
-            <button className='Donors-Button'>Donate</button>
+            <h3 className='card-heading'>Restaurants</h3>
+            <p>Restaurants need to fill the form type preference ,animal,weight and location.To give the clear idea to the volunteers to provide food to the animals.</p>
+            <button className='Donors-Button'>Dashboard</button>
         </div>
         </div>
 

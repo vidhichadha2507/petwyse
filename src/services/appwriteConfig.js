@@ -1,4 +1,4 @@
-import { Client, Account } from "appwrite";
+import { Client, Account, Databases } from "appwrite";
 
 const client = new Client();
 
@@ -6,3 +6,4 @@ client
   .setEndpoint("http://localhost/v1") // Your API Endpoint
   .setProject("6325b238d41df12f31bc"); // Your project ID
 export const account = new Account(client);
+export const database = new Databases(client);

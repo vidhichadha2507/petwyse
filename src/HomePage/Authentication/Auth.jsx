@@ -15,14 +15,16 @@ import "react-dropdown/style.css";
 
 import { useNavigate } from "react-router-dom";
 import { account } from "../../services/appwriteConfig";
-
+import { PetwyseContext } from "../../context/context";
 import useStyles from "./styles";
+import { useContext } from "react";
 
 const Auth = () => {
   const classes = useStyles();
   const [isSignUp, setisSignUp] = useState(false);
 
   const navigate = useNavigate();
+  // const { userData, setUserData } = useContext(PetwyseContext);
   const [userData, setUserData] = useState({
     name: "jhb",
     email: "jhbgk@jhb.com",

@@ -5,7 +5,7 @@ const HomeRight = () => {
   return (
   <div className="Right">
 
-    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
+    <img src="https://cdn.discordapp.com/attachments/987242934346850304/1020981219200094208/Food_for_Street_Animals_1.png" alt="" />
   </div>
 
    

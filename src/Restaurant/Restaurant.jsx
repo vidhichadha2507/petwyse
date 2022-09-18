@@ -1,22 +1,17 @@
-import React from 'react'
-import Form from './Form'
-import TopDonaters from './TopDonaters'
-import "./restaurant.scss"
+import React, { useState } from "react";
+import Form from "./Form";
+import TopDonaters from "./TopDonaters";
+import "./restaurant.scss";
 
 const Restaurant = () => {
   return (
-    <div className='Restaurant'>
-       
-        <Form/>
-    
-       
+    <div className="Restaurant">
+      {/* <h1>{name}</h1> */}
+      <Form />
 
-        <TopDonaters/>
-     
-        
-        
+      <TopDonaters />
     </div>
-  )
-}
+  );
+};
 
-export default Restaurant
+export default Restaurant;

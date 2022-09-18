@@ -3,23 +3,24 @@ import React, { createContext, useState } from "react";
 export const PetwyseContext = createContext();
 
 const Context = ({ children }) => {
-  const [foodDetails, setFoodDetails] = useState({
-    type: "",
-    for: "",
-    weight: "",
-    location: "",
-  });
+  //   const [foodDetails, setFoodDetails] = useState({
+  //     type: "",
+  //     for: "",
+  //     weight: "",
+  //     location: "",
+  //   });
 
-  const [userData, setUserData] = useState({
-    name: "jhb",
-    email: "jhbgk@jhb.com",
-    password: "jhbv",
-    type: "Restaurant",
-  });
-
+  //   const [userData, setUserData] = useState({
+  //     name: "jhb",
+  //     email: "jhbgk@jhb.com",
+  //     password: "jhbv",
+  //     type: "Restaurant",
+  //   });
+  const [name, setName] = useState("");
   return (
     <PetwyseContext.Provider
-      value={{ foodDetails, setFoodDetails, userData, setUserData }}
+      //   value={{ foodDetails, setFoodDetails, userData, setUserData }}
+      value={{ name, setName }}
     >
       {children}
     </PetwyseContext.Provider>

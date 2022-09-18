@@ -24,7 +24,7 @@ const Auth = () => {
   const [isSignUp, setisSignUp] = useState(false);
 
   const navigate = useNavigate();
-  // const { userData, setUserData } = useContext(PetwyseContext);
+  // const { setName, name } = useContext(PetwyseContext);
   const [userData, setUserData] = useState({
     name: "jhb",
     email: "jhbgk@jhb.com",
@@ -47,6 +47,7 @@ const Auth = () => {
           userData.password,
           userData.name
         );
+
         console.log(newUser);
       } catch (error) {
         console.log(error);
@@ -57,10 +58,16 @@ const Auth = () => {
           userData.email,
           userData.password
         );
+        localStorage.setItem("Name", loggeduser.name);
         console.log(loggeduser);
       } catch (error) {
         console.log(error);
       }
+    }
+    if (userData.type === "Restaurant") {
+      navigate("/restaurant");
+    } else {
+      navigate("/user");
     }
   };
 

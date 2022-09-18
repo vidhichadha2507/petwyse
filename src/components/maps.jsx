@@ -1,14 +1,17 @@
+import './App.css';
 import{useState} from 'react'
-import { GoogleMap, useJsApiLoader,Marker} from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader,Marker,DistanceMatrixService} from '@react-google-maps/api';
 import React from 'react';
 const containerStyle = {
   width: '50%',
   height: '500px'
 };
-function Maps() {
+function App() {
 
   const [lati,setLati]=useState(51.5072)
   const [longi,setLongi]=useState(-0.1276)
+  const [distance, setdistance] = useState(0)
+  const [duration, setduration] = useState(0)
   const watchID = navigator.geolocation.getCurrentPosition((position) => {
     setLati(position.coords.latitude)
     setLongi(position.coords.longitude)
@@ -24,7 +27,7 @@ function Maps() {
     const bounds = new window.google.maps.LatLngBounds(center);
     map.fitBounds(bounds);
     setMap(map)
-  }, [])
+  }, [center])
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null)
   }, [])
@@ -32,7 +35,7 @@ function Maps() {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={14}
+      zoom={13}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
@@ -47,6 +50,24 @@ position={{
 
 }}
 
+
+/>
+<pan
+  lat={lati}
+  lng={longi}
+/>
+<DistanceMatrixService
+ options={{
+           destinations: [{lat:1.296788, lng:103.778961}],
+           origins: [{lng:103.780267, lat:1.291692}],
+           travelMode: "DRIVING",
+         }}
+ callback = {(response) => {
+  setdistance(response.rows[0].elements[0].distance.text)
+  setduration(response.rows[0].elements[0].duration.text)
+  console.log(distance)
+  console.log(duration)
+ }}
 />
     </GoogleMap>
     
@@ -54,4 +75,4 @@ position={{
 }
 
 
-export default React.memo(Maps)
+export default React.memo(App)

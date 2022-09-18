@@ -1,7 +1,8 @@
 import React from "react";
 import "./NavBar.css";
-
+import { useNavigate } from "react-router";
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <nav
@@ -10,7 +11,13 @@ const NavBar = () => {
       >
         <div className="container-fluid">
           <a className="navbar-brand logo-text fw-bold" href="#">
-            Coding Yaar
+            <div
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Petwyse
+            </div>
           </a>
           <button
             className="navbar-toggler"
@@ -35,11 +42,7 @@ const NavBar = () => {
                   Features
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
+
               <li className="nav-item">
                 <a className="nav-link ">Contact</a>
               </li>

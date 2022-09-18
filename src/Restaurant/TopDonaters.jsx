@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Maps from "../components/maps";
 
 const TopDonaters = () => {
-  return (
-    <div>TopDonaters</div>
-  )
-}
+  return <Maps />;
+};
 
-export default TopDonaters
+export default TopDonaters;

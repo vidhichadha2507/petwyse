@@ -3,6 +3,9 @@ import { database } from "../services/appwriteConfig";
 import Card from "./Card";
 import "./user.scss";
 
+import Maps from "../components/maps";
+import NavBar from "../HomePage/NavBar";
+
 const User = () => {
   const [foodDetails, setFoodDetails] = useState([]);
   useEffect(() => {
@@ -21,21 +24,29 @@ const User = () => {
     getFoods();
   }, []);
   return (
-    <div className="Main-Body">
-      <div className="Users">
-        {foodDetails.map((food) => {
-          return (
-            <Card
-              forr={food.for}
-              type={food.type}
-              weight={food.weight}
-              location={food.location}
-            />
-          );
-        })}
-      </div>
+    <div>
+      <NavBar />
+      <div className="Main-Body">
+        <div className="Users">
+          <div className="cardscss">
+            {foodDetails.map((food) => {
+              return (
+                <Card
+                  forr={food.for}
+                  type={food.type}
+                  weight={food.weight}
+                  location={food.location}
+                />
+              );
+            })}
+          </div>
+        </div>
 
-      <div className="right-Part">Right</div>
+        <div className="right-Part">
+          {" "}
+          <Maps />
+        </div>
+      </div>
     </div>
   );
 };

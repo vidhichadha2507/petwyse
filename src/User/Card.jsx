@@ -6,10 +6,10 @@ const Card = ({ forr, type, weight, location }) => {
   return (
     <div className="Card">
       <div className="Card-Container">
-        <h1>{type}</h1>
-        <p>{forr}</p>
-        <p>{weight}</p>
-        <p>{location}</p>
+        <h1>{`Type of Food -> ${type}`}</h1>
+        <p>{`Compatible for ${forr}`}</p>
+        <p>{`Total Weight ->${weight}kg`}</p>
+        {/* <p>{location}</p> */}
       </div>
     </div>
   );

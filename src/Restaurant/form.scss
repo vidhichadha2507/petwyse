@@ -1,8 +1,10 @@
 .Card {
   padding: 50px;
+  background-color: #ffffff !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
   margin-left: 200px;
+  margin-right: 60px;
 
   h1 {
     font-size: 28px;
@@ -22,6 +24,7 @@
     max-width: 100%;
   }
   .btn {
+    margin-left: 180px;
     margin-top: 20px;
     display: flex;
     align-items: center;

@@ -1,17 +1,18 @@
-.Main-Body{
+.Main-Body {
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f8f8;
 
-    display: flex;
-    flex-direction: row;
+  .Users {
+    flex: 6;
 
-    .Users{
-        display: flex;
-        flex-direction: row;
-        flex: 9;
-        flex-wrap: wrap;
+    .cardscss {
+      display: flex;
+      flex-direction: column;
     }
+  }
 
-    .right-Part{
-        flex: 3;
-    }
+  .right-Part {
+    flex: 6;
+  }
 }
-

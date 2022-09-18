@@ -68,15 +68,6 @@ const Form = () => {
         />
         <br />
 
-        <label>location</label>
-        <br />
-        <input
-          onChange={(e) =>
-            setFoodDetails({ ...foodDetails, location: e.target.value })
-          }
-          type="text"
-          id="location"
-        />
         <br />
 
         <button

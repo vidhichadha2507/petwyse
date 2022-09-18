@@ -1,0 +1,17 @@
+.Main-Body{
+
+    display: flex;
+    flex-direction: row;
+
+    .Users{
+        display: flex;
+        flex-direction: row;
+        flex: 9;
+        flex-wrap: wrap;
+    }
+
+    .right-Part{
+        flex: 3;
+    }
+}
+

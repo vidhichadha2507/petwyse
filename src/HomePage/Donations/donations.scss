@@ -1,0 +1,73 @@
+.Donations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 200px;
+    text-align: center;
+    
+
+
+    .Donations-paragraph{
+        color: #B5B5B5;
+        margin-top: 10px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        text-align: left;
+        
+
+        .card-heading{
+            font-size: 21px;
+          
+        }
+
+        .Donors-Button{
+            background-color: transparent;
+          
+            border-radius: 14px;
+            padding: 0 50px;
+            margin-top: 10px;
+            border-color: white;
+            color: white;
+        }
+       
+
+        .donor{
+            margin: 50px;
+            padding: 30px;
+            background-color: #1D6E65;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 14px;
+
+           
+           
+
+              
+        }
+
+        .volunteer{
+            background-color:#D1A184;
+            margin: 50px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 14px;
+            }
+
+            @media screen and (max-width:1200px){
+                
+                display: flex;
+                flex-direction: column;
+        
+            }
+    }
+
+    @media screen and (max-width:1200px){
+        width: 100%;
+        padding: 0;
+    }
+}

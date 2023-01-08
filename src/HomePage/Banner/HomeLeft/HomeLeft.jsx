@@ -7,10 +7,10 @@ const HomeLeft = () => {
   return (
     <div className="Left">
       <h1 className="Main-heading">
-        The Best Amoung you are those who bring greatest benefit to many
-        others.!
+        The Best Among you are those who bring greatest benefit to many others.!
       </h1>
-      <p className="Main-Paragraph">Let Us Guide to your benefits</p>
+      <p className="Main-Paragraph">Holding Hands With Community</p>
+
       <div className="Main-Buttons">
         <button
           onClick={() => {

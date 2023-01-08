@@ -31,7 +31,7 @@ const Auth = () => {
     password: "jhbv",
     type: "Restaurant",
   });
-  const options = ["Restaraunt", "Customer"];
+  const options = ["Restaraunt", "Volunteer"];
   const defaultOption = options[0];
   const switchMode = () => {
     setisSignUp((prevState) => !prevState);
